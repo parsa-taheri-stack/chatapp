@@ -27,9 +27,6 @@
 
 **My Skills**
 
-> React , ReactNative
-> ElectronJs
-> Nodejs
-> vim , linux , git
+> React , ReactNative , ElectronJs , Nodejs , vim , linux , git
 
 ![My Skills](https://skillicons.dev/icons?i=js,html,css,react,nodejs,electron,express,vim,linux,git&perline=3)
