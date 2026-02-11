@@ -1,17 +1,17 @@
 const express = require('express')
 const { createServer } = require('node:http')
-const { join } = require('node:path')
 const { Server } = require('socket.io')
+
 require('dotenv').config({
   quiet: true,
 })
 const PORT = process.env.PORT
 
-const app = express()
-const server = createServer(app)
+const express_server = express()
+const server = createServer(express_server)
 const io = new Server(server)
 
-app.get('/', (req, res) => {
+express_server.get('/', (req, res) => {
   res.write('Hello from sockets server')
   res.end()
 })

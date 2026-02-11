@@ -14,6 +14,11 @@ const createWindow = () => {
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
+    autoHideMenuBar: true,
+    titleBarStyle: 'hidden',
+    ...(process.platform !== 'darwin' ? { titleBarOverlay: false } : {}),
+    transparent: true,
+    frame: true,
   })
 
   // and load the index.html of the app.
